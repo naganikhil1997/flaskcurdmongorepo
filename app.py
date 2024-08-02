@@ -7,8 +7,8 @@ app = Flask(__name__)
 # MongoDB connection details
 mongo_uri = "mongodb+srv://nikhil:nnikhil001@cluster0.myajnwp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # Replace with your MongoDB URI
 client = MongoClient(mongo_uri, serverSelectionTimeoutMS=60000)
-
 db = client["books_db"]  # Database name
+  # Database name
 books_collection = db["books"]  # Collection name
 
 # Initial books data
