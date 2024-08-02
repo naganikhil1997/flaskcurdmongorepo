@@ -50,7 +50,6 @@ initial_books = [
     },
 ]
 
-# Function to initialize the database with initial books
 def initialize_books():
     if books_collection.count_documents({}) == 0:
         books_collection.insert_many(initial_books)
